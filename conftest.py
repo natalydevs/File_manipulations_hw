@@ -1,5 +1,8 @@
+import pytest
 from zipfile import ZipFile, ZIP_DEFLATED
 import os
+
+@pytest.fixture(scope='function',autouse=True)
 def test_zip_archive():
     path = "tmp_files"   # папка, откуда берём файлы
     files = os.listdir(path)
