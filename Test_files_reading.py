@@ -4,6 +4,7 @@ import csv
 from PyPDF2 import PdfReader
 from openpyxl import load_workbook
 
+
 ARCHIVE_PATH = "resources/files_arc.zip"
 
 def test_archive_has_required_types():
